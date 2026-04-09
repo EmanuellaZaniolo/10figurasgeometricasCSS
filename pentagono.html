@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            margin: 0; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+        }
+        .pentagono {
+            position: relative; /* Permite posicionar elementos filhos dentro dele */
+            width: 100px; 
+            box-sizing: content-box; 
+            border-width: 50px 18px 0; /* parte inferior */
+            border-style: solid; 
+            border-color: #33FFF5 transparent; /* Cor na base, transparente nos lados */
+        }
+        /*pseudoelemento*/
+        .pentagono:before {
+            content: "";
+            position: absolute; /*fica em relação ao pentágono principal */
+            height: 0; 
+            width: 0; 
+            top: -85px; /* Move para cima para formar o topo */
+            left: -18px; /* Alinha horizontalmente */
+            border-width: 0 68px 35px; /* Dimensões do triângulo do topo */
+            border-style: solid; 
+            border-color: transparent transparent #33FFF5; /* Cria a ponta superior */
+        }
+    </style>
+</head>
+<body>
+    <div class="pentagono"></div>
+</body>
+</html>

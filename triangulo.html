@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            margin: 0; 
+            display: flex; /*layout flexível */
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+            min-height: 100vh; /* Define a altura como 100% da área visível */
+        }
+        .triangulo {
+            width: 0; /* Largura zero para forçar a forma pelas bordas */
+            height: 0; /* Altura zero para forçar a forma pelas bordas */
+            border-left: 75px solid transparent; /* Cria inclinação transparente na esquerda */
+            border-right: 75px solid transparent; /* Cria inclinação transparente na direita */
+            border-bottom: 130px solid #FF5733; /* A base colorida que define a altura visual */
+        }
+    </style>
+</head>
+<body>
+    <div class="triangulo"></div>
+</body>
+</html>
